@@ -1,0 +1,11 @@
+.userModal {
+    position: absolute;
+    top: -100vh;
+    left: 25%;
+    width: 50%;
+    z-index: 1000;
+}
+
+.isOpen {
+    top: 100px;
+}

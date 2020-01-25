@@ -9,11 +9,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import {applyMiddleware, combineReducers, compose, createStore} from "redux";
 import thunk from "redux-thunk";
-import reducer from "./store/reducers/reducer";
 import {Provider} from "react-redux";
+import {contactsReducer} from "./store/reducers/contactsReducer";
+import editReducer from "./store/reducers/editReducer";
 
 const rootReducer = combineReducers({
-    reducer: reducer,
+    contacts: contactsReducer,
+    edit: editReducer,
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

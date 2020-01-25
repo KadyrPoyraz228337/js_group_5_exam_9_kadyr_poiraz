@@ -1,0 +1,4 @@
+export const FETCH_CONTACTS = 'FETCH_CONTACTS';
+
+export const FETCH_CONTACTS_DATA = 'FETCH_CONTACTS_DATA';
+export const EDIT_DATA = 'EDIT_DATA';
