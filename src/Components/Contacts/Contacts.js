@@ -17,10 +17,11 @@ const Contacts = props => {
     const [contact, setContact] = useState(null);
 
     const contactDelete = async () => {
-        const userAsw = window.confirm("Are you sure you want to delete the contact "+props.data.name+'?');
+        const userAsw = window.confirm("Are you sure you want to delete the contact "+contact.name+'?');
         if(userAsw) {
-            await props.deleteContact(props.id);
+            await props.deleteContact(contact.id);
             await props.getContacts();
+            setToggle(false);
         }
     };
 
